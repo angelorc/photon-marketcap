@@ -41,7 +41,7 @@ const formatUSD = (num: string = "0", maximumFractionDigits: number = 2) => {
 
       <Card class="border-border bg-card transition-colors hover:bg-card/80">
         <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle class="text-sm font-medium text-muted-foreground">Total Supply</CardTitle>
+          <CardTitle class="text-sm font-medium text-muted-foreground">Circulating Supply</CardTitle>
           <Coins class="h-4 w-4 text-primary" />
         </CardHeader>
         <CardContent>
@@ -71,7 +71,7 @@ const formatUSD = (num: string = "0", maximumFractionDigits: number = 2) => {
 
       <Card class="border-border bg-card transition-colors hover:bg-card/80">
         <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle class="text-sm font-medium text-muted-foreground">Osmosis Supply</CardTitle>
+          <CardTitle class="text-sm font-medium text-muted-foreground">Supply on Osmosis</CardTitle>
           <Activity class="h-4 w-4 text-primary" />
         </CardHeader>
         <CardContent>

@@ -14,12 +14,13 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://photonmarketcap.org' },
         { property: 'og:image', content: 'https://photonmarketcap.org/og.png' },
         { property: 'og:image:alt', content: 'Photon Marketcap' },
-        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { property: 'twitter:domain', content: 'photonmarketcap.org' },
+        { property: 'twitter:url', content: 'https://photonmarketcap.org' },
         { name: 'twitter:title', content: 'Photon Marketcap' },
         { name: 'twitter:description', content: 'A marketcap dashboard for the Photon token' },
         { name: 'twitter:image', content: 'https://photonmarketcap.org/og.png' },
         { name: 'twitter:image:alt', content: 'Photon Marketcap' },
-
       ],
     }
   },

@@ -1,7 +1,19 @@
 <script lang="ts" setup>
 import { Activity, BarChart3, Coins, DollarSign, Wallet, Zap } from "lucide-vue-next";
 
-const { data } = await useAsyncData("metrics", () => $fetch("/api/metrics"))
+import { useQuery } from '@tanstack/vue-query'
+
+const { $orpc } = useNuxtApp()
+
+const query = useQuery($orpc.getMetrics.queryOptions({
+  refetchInterval: 1000 * 60, // 1 minute
+  refetchOnWindowFocus: true,
+  staleTime: 1000 * 60 * 5, // 5 minutes
+}))
+
+await query.suspense()
+
+const data = query.data
 
 const formatNumber = (num: string = "0") => {
   return Intl.NumberFormat("en-US", {

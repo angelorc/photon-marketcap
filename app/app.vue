@@ -7,6 +7,7 @@
         <AppMetricsGrid />
         <AppInfo />
         <AppLinks />
+        <AppSupport />
       </div>
     </main>
   </div>

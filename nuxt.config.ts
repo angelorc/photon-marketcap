@@ -25,9 +25,15 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt', '@nuxt/eslint'],
   shadcn: {
     prefix: '',
     componentDir: './app/components/ui'
   },
+
+  eslint: {
+    config: {
+      stylistic: true
+    }
+  }
 })
